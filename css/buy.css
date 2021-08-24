@@ -1,0 +1,127 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	background-image: url(/img/pppp.jpg);
+	width: 100%;
+	backdrop-filter: blur(5px);
+}
+.container {
+    width: 60% !important;
+}
+.navtop {
+	background-color: #F2F2F2;
+	/* width: 50%; */
+}
+.navtop a {
+	color: rgba(59, 59, 59, 0.781);
+}
+.navtop a:hover {
+	color: rgba(0, 0, 0, 0.445);
+}
+.navtop a:active {
+	color: rgb(37, 37, 37);
+}
+
+.banner {
+    
+    background:url('../img/home.jpg')
+    center center no-repeat ; 
+    background-size: cover;
+    height: 300px;
+    opacity: 0.8;
+	backdrop-filter: blur(5px);
+
+}
+.alignworld {
+	text-align: justify;
+	text-justify: distribute;
+}
+.banner-title {
+    width: 200px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+.ml-60 {
+    margin-left: 60px;
+}
+.imgtext {
+	display: flex;
+	width: 300px;
+	height: 300px;
+	object-fit: contain;
+}
+.imgtext-2 {
+	display: flex;
+	width: 80px;
+	height: 80px;
+	object-fit: contain;
+}
+.bgcolor {
+	background-color: #F2F2F2;
+	width: 100%;
+}
+.footer {
+	background-color: #F2F2F2;
+	font-size: 12px;
+
+}
+.text {
+	font-size: 12px;
+}
+.text-2 {
+	font-size: 50px;
+}
+.p-50 {
+	padding: 60px;
+}
+.p-45 {
+	padding: 45px;
+}

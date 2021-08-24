@@ -1,0 +1,10 @@
+body {
+    background-image: url(/img/pppp.jpg);
+    /* background-repeat: no-repeat; */
+   
+}
+.container {
+    background-color: #F2F2F2;
+    border-radius: 25px;
+}
+
