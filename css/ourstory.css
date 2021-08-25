@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 body {
-	background-image: url(/img/pppp.jpg);
+	background-image: url(../img/pppp.jpg);
 	width: 100%;
 	backdrop-filter: blur(5px);
 }
@@ -96,4 +96,122 @@ body {
 	background-color: #F2F2F2;
 	font-size: 12px;
 
+}
+.shadow {
+	box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.7);
+}
+.ch {
+	background-color: #F2F2F2;
+}
+.ah {
+	background-color: #F2F2F2;
+}
+.ch:hover {
+	transform: scale(1.2);
+	
+}
+.ah:hover {	
+	opacity: 0.8;
+}
+.bg-radius {
+	border-radius: 25px;
+}
+.abuy::after {
+	color:rgba(59, 59, 59, 0.781);
+}
+	
+.abuy:hover::after {
+	opacity: 0;
+}
+.abuy::before {
+	position: absolute;
+	color:rgba(59, 59, 59, 0.781);
+	transition: all .65s .1s;
+	transform: 0.3s;
+	backface-visibility: hidden;
+}
+  
+.abuy:hover::before {
+	transform: translateY(-1em);
+	opacity: 0;
+}
+.astory::after {
+	color:rgba(59, 59, 59, 0.781);
+}
+	
+.astory:hover::after {
+	opacity: 0;
+}
+.astory::before {
+	content: "關於我們";
+	position: absolute;
+	color:rgba(59, 59, 59, 0.781);
+	transition: all .65s .1s;
+	transform: 0.3s;
+	backface-visibility: hidden;
+}
+  
+.astory:hover::before {
+	transform: translateY(-1em);
+	opacity: 0;
+}
+.astore::after {
+	color:rgba(59, 59, 59, 0.781);
+}
+	
+.astore:hover::after {
+	opacity: 0;
+}
+.astore::before {
+	content: "門市查詢";
+	position: absolute;
+	color:rgba(59, 59, 59, 0.781);
+	transition: all .65s .1s;
+	transform: 0.3s;
+	backface-visibility: hidden;
+}
+  
+.astore:hover::before {
+	transform: translateY(-1em);
+	opacity: 0;
+}
+.abuy::after {
+	color:rgba(59, 59, 59, 0.781);
+}
+	
+.abuy:hover::after {
+	opacity: 0;
+}
+.abuy::before {
+	content: "選購方案";
+	position: absolute;
+	color:rgba(59, 59, 59, 0.781);
+	transition: all .65s .1s;
+	transform: 0.3s;
+	backface-visibility: hidden;
+}
+  
+.abuy:hover::before {
+	transform: translateY(-1em);
+	opacity: 0;
+}
+.aproduct::after {
+	color:rgba(59, 59, 59, 0.781);
+}
+	
+.aproduct:hover::after {
+	opacity: 0;
+}
+.aproduct::before {
+	content: "商品介紹";
+	position: absolute;
+	color:rgba(59, 59, 59, 0.781);
+	transition: all .65s .1s;
+	transform: 0.3s;
+	backface-visibility: hidden;
+}
+  
+.aproduct:hover::before {
+	transform: translateY(-1em);
+	opacity: 0;
 }

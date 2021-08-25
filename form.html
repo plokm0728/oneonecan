@@ -15,50 +15,70 @@
 </head>
 
 <body>
-    <form action="/ans.html">
+    <!-- 訂購表單 -->
+    <form >
         <div class="header text-center m-5">
             <h1><b>訂購方案</b></h1>
         </div>
- 
-        <div class="container d-flex justify-content-around ">
-            <div class="content text-left">
-                <div class="pt-5 pl-5">
-                    <label for="username">姓名：</label>
-                    <input id="username" type="text" autocomplete="off" required>
+        <!-- 表單內文 -->
+        <div class="container shadow">
+            <div class="d-flex justify-content-around ">
+                <div class="text-left">
+                    <div class="pt-5 pl-5">
+                        <label for="username">姓名：</label>
+                        <input id="username" type="text" autocomplete="off" required>
+                    </div>
+                    <div class="pt-5 pl-5">
+                        <label for="userphone">電話：</label>
+                        <input id="userphone" type="tel" autocomplete="off" required>
+                    </div>
+                    <div class="pt-5 pl-5">
+                        <label for="useremail">信箱：</label>
+                        <input id="useremail" type="email" autocomplete="off">
+                    </div>
+                    <div class="pt-5 pl-5">
+                        <label for="usercontry">地址：</label>
+                        <input id="usercontry" type="text" autocomplete="off">
+                    </div>
+                    <div class="pt-5 pb-5 pl-5">
+                        <label for="userchoce" >方案：</label>
+                        <input id="userchoce" checked type="radio" value="day" name="ch">
+                        <label for="userchoce">日租</label>
+                        <input id="userchoce2" type="radio" value="month" name="ch">
+                        <label for="userchoce2">月租</label>
+                        <input id="userchoce3" type="radio" value="year" name="ch">
+                        <label for="userchoce3">年租</label>
+                    </div>
                 </div>
-                <div class="pt-5 pl-5">
-                    <label for="userphone">電話：</label>
-                    <input id="userphone" type="tel" autocomplete="off" required>
-                </div>
-                <div class="pt-5 pl-5">
-                    <label for="useremail">信箱：</label>
-                    <input id="useremail" type="email" autocomplete="off">
-                </div>
-                <div class="pt-5 pl-5">
-                    <label for="usercontry">地址：</label>
-                    <input id="usercontry" type="text" autocomplete="off">
-                </div>
-                <div class="pt-5 pb-5 pl-5">
-                    <label for="userchoce">方案：</label>
-                    <input id="userchoce" type="radio" value="day" name="ch">
-                    <label for="userchoce">日租</label>
-                    <input id="userchoce2" type="radio" value="month" name="ch">
-                    <label for="userchoce2">月租</label>
-                    <input id="userchoce3" type="radio" value="year" name="ch">
-                    <label for="userchoce3">年租</label>
+                <!-- 方案圖片 -->
+                <div class="pl-5 pr-5 pt-4 pb-3 text-right">
+                    <img style="width:750px;height:550px;" src="./img/demo.png" alt="">
                 </div>
             </div>
-            <div class="pl-5 pr-5 pt-4 pb-3 text-right">
+            <!-- 表單提交 -->
+            <div class="pb-4 text-center container ">
+                <input id="btn" type="button" onclick="btnn()" value="提交" class="btn btn-light">
+            </div>
 
-                <img style="width:750px;height:550px;" src="/img/demo.png" alt="">
-            </div>
-            
-            
         </div>
-        <div class="pb-4 text-center container">
-            <input type="submit" class="btn btn-light">
-        </div>
+
+
     </form>
+    <script>
+        function btnn() {     
+             let inpName = $('#username').val();
+             let inpPhone = $('#userphone').val();
+            if (confirm("確定提交訂單嗎？") ) {
+                if(inpName != '' && inpPhone != ''){
+                alert('提交訂單');
+                    window.location.replace('ans.html'); 
+                //  return;
+                }else {
+                alert('重新填寫');
+            }
+            } 
+        }
+    </script>
 
 
 </body>

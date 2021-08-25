@@ -27,10 +27,10 @@
             </div>
             <!-- 右方選單 -->
             <nav class="col-7 col-md-4 nava d-flex justify-content-around ">
-                <a style="text-decoration:none;" href="./ourstory.html">關於我們</a>
-                <a style="text-decoration:none;" href="./product.html">商品介紹</a>
-                <a style="text-decoration:none;" href="./buy.html">選購方案</a>
-                <a style="text-decoration:none;" href="./store.html">門市查詢</a>
+                <a class="astory" style="text-decoration:none;" href="./ourstory.html">關於我們</a>
+                <a class="aproduct" style="text-decoration:none; " href="./product.html">商品介紹</a>
+                <a class="abuy" style="text-decoration:none;" href="./buy.html">選購方案</a>
+                <a class="astore" style="text-decoration:none;" href="./store.html">門市查詢</a>
             </nav>
         </div>
     </div>
@@ -42,7 +42,7 @@
     <div class="container">
         <!-- 門市查詢 -->
         <h3 class="text-center mt-5 pb-5">各地門市</h3>
-        <div class=" bgcolor align-items-center">
+        <div class=" bgcolor align-items-center shadow bg-radius">
             <div class="p-4 text-center ">
                
                 <label for="area">分店查詢：</label>
@@ -60,20 +60,15 @@
                     <option value="ch">彰化市</option>
                 </select>
             </div>
-            <div  class="d-flex justify-content-around  ">
-                <div class="">
+            <!-- 輸出對應文字及圖片 -->
+            <div  class="d-flex justify-content-around">
+                <div class="pb-5">
                     <p id="ans" class="text-left pb-5 b-2　"></p>
                     <p id="st"></p>
                     <p id="te"></p>
                     <p id="co"></p>
-                    <img id="map" src="" alt="" >
-
-                </div>
-                <!-- <img id="map" src="./img/store1.jpg" alt="">
-                <img id="map2" src="./img/store2.jpg" alt="">
-                <img id="map3" src="./img/store3.jpg" alt="">
-                <img id="map4" src="./img/store4.jpg" alt=""> -->
-                
+                    <img id="map" src="" alt="" ></br>
+                </div>           
             </div>
           
             
@@ -86,7 +81,7 @@
 
 
     <!-- 底部資訊欄 -->
-    <div class="footer">
+    <div class="footer ">
         <div class="navbottom   pt-4  mar-20 d-flex justify-content-around align-center-center mt-5">
             <!-- 聯絡資訊 -->
             <ul class=" text-left ">
@@ -99,12 +94,12 @@
             <!-- 社群連結 -->
             <ul class="">
                 <li>社群連結</li></br>
-                <li style="display:inline;margin-right: 10px;"><a target="_blank" href="https://www.facebook.com/"><img
-                            style="width:30px;height:30px;" src="./img/facebook-square-brands.svg" alt=""></a></li>
-                <li style="display:inline;margin-right: 10px;"><a target="_blank" href="https://www.instagram.com/"><img
-                            style="width:30px;height:30px;" src="./img/instagram-square-brands.svg" alt=""></a></li>
-                <li style="display:inline"><a target="_blank" href="https://line.kim/zh-hant/"><img
-                            style="width:30px;height:30px;" src="./img/line-brands.svg" alt=""></a></li>
+                <li class="ah" style="display:inline;margin-right: 10px;"><a target="_blank" href="https://www.facebook.com/"><img
+                            style="width:45px;height:45px;" src="./img/facebook-square-brands.svg" alt=""></a></li>
+                <li class="ah"  style="display:inline;margin-right: 10px;"><a target="_blank" href="https://www.instagram.com/"><img
+                            style="width:45px;height:45px;" src="./img/instagram-square-brands.svg" alt=""></a></li>
+                <li class="ah"  style="display:inline"><a target="_blank" href="https://line.kim/zh-hant/"><img
+                            style="width:45px;height:45px;" src="./img/line-brands.svg" alt=""></a></li>
             </ul>
             <!-- 品牌LOGO -->
             <ul class=" ">
@@ -122,3 +117,4 @@
 </body>
 
 </html>
+
